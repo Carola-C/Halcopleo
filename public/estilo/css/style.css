@@ -105,7 +105,7 @@ font header .navbar-default .navbar-nav li a:hover {
   right: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to left, #8b86a3, #322e40);
+  /*background: linear-gradient(to left, #F7931E, #666666);*/
   opacity: 0.8;
 }
 #slider .block {
@@ -366,7 +366,7 @@ font header .navbar-default .navbar-nav li a:hover {
   right: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to left, #928dab, #1f1c2c 70%);
+  background: linear-gradient(to left, #fc7a00, #F79311 60%);
   opacity: 0.8;
 }
 #global-header .block {
@@ -382,6 +382,7 @@ font header .navbar-default .navbar-nav li a:hover {
   padding-bottom: 15px;
   margin-top: 0;
   text-transform: capitalize;
+  font-family: 'Lucida Sans';
 }
 #global-header .block p {
   font-size: 16px;
