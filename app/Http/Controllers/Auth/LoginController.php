@@ -147,7 +147,7 @@ class LoginController extends Controller
         //$input = array('file' => $archivo);
         //$reglas = array('file' => 'required|mimes:jpeg,png,gif|max:50000');
         //$ruta = $prefijo.'_'.$archivo->getClientOriginalName();
-        $ruta = $archivo->getClientOriginalName();
+        $ruta = time().$archivo->getClientOriginalName();
         $r1 = Storage::disk('usuarios')->put($ruta, \File::get($archivo));
         if ($r1) {
             $datos['foto_ruta'] =$ruta;
