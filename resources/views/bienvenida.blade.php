@@ -17,7 +17,6 @@
   @endsection()
   @section('contenido_central2')
 
-
  <!-- Wrapper Start -->
     <section id="intro">
       <div class="container">
@@ -33,7 +32,7 @@
           </div><!-- .col-md-7 close -->
           <div class="col-md-5 col-sm-12">
             <div class="block">
-              <img src="{!! asset('estilo/img/pic1.png') !!}"  alt="Img">
+              <img src="{!! asset('estilo/img/qeh.jpg') !!}"  alt="Img">
             </div>
           </div><!-- .col-md-5 close -->
         </div>
@@ -44,18 +43,17 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-md-offset-6" >
-          <h2>¿Quieres promocionar tus empleos</h2>
+          <h2 style="color: #fff;">¿Quieres promocionar tus empleos?</h2>
           <p>
-          <font color="black">
+          <font color="white">
             Aquí puedes promocionar los empleos que tienes vigentes y así estarán disponibles para que otros lo vean y te contacten
           </font>
           </p>
           <p>
-          <font color="black">
+          <font color="white">
             Entre nuestros usuarios puede estar tu siguiente empleado, podras mirar el perfil de los candidatos al empleo y escoge alguno de ellos.
           </font>
           </p>
-          
           <a href="#" class="btn btn-view-works">Registrarse</a>
         </div>
       </div>
@@ -73,7 +71,7 @@
               Además de que si tienes alguna duda de cómo generar tu curriculum o como presentarte a una entrevista, podrás obervar diferentes consejos sobre el tema que te ayudarán
             </p>
             <p>Y no solo eso, también tú nos puedes ayudar añadiendo tu experiencia en este campo, solo necesitas registrarte</p>
-            <button name="Registrarse" style="background: #655E7A; color: #fff; padding: 10px 20px; border-radius: 10px;">Registrarse</button>
+            <button name="Registrarse" style="background: #F7931E; color: #fff; padding: 10px 20px; border-radius: 10px; font-weight: bold;">Registrarse</button>
              
           </div>
         </div>

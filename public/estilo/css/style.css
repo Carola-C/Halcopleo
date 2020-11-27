@@ -1,12 +1,25 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
 @import url(http://fonts.googleapis.com/css?family=Volkhov:400italic);
+
+/*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
+
+@import url(https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i);
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,400,600,700,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Dosis:400,500,600,700,800&display=swap);
+
+/*****---------------------------------------- 
+1) font-family: 'Rajdhani', sans-serif;
+ 2) font-family: 'Poppins', sans-serif;
+ ----------------------------------------*****/
 /* var text-decoration */
 /*--
 	Common Css
 --*/
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
   -webkit-font-smoothing: antialiased;
 }
 h1,
@@ -15,7 +28,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 h2 {
   font-size: 30px;
@@ -39,17 +52,19 @@ a:active,
 a:focus,
 a:active {
   text-decoration: none !important;
+  font-size: xx-large;
 }
 .section-title {
   margin-bottom: 70px;
 }
 .section-title h2 {
+  font-family:  'Poppins', sans-serif;
   text-transform: uppercase;
   font-size: 28px;
   font-weight: 600;
 }
 .section-title p {
-  font-family: 'Volkhov', serif;
+  font-family:  'Poppins', sans-serif;
   font-style: italic;
   color: #666;
 }
@@ -61,11 +76,13 @@ header {
   padding: 20px 0;
 }
 header .navbar {
+  font-family:  'League Spartan';
+  color: #666666;
   margin-bottom: 0px;
   border: 0px;
 }
 header .navbar-brand {
-  padding-top: 5px;
+  padding-top: 0px;
 }
 header .navbar-default {
   background: none;
@@ -77,10 +94,13 @@ header .navbar-default .navbar-nav {
 header .navbar-default .navbar-nav li a {
   color: #333333;
   padding: 10px 26px;
-  font-size: 15px;
+  font-size: large;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
 }
 font header .navbar-default .navbar-nav li a:hover {
   color: #000;
+  font-size: large;
 }
 /*---------------------------------------------
 					Index Start 
@@ -112,19 +132,16 @@ font header .navbar-default .navbar-nav li a:hover {
   color: #E3E3E4;
 }
 #slider .block h1 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
+  font-family: 'Poppins', sans-serif;
   font-size: 45px;
   line-height: 60px;
-  letter-spacing: 10px;
   padding-bottom: 45px;
 }
 #slider .block p {
   font-size: 23px;
   line-height: 40px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  letter-spacing: 3px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
 }
 /*--
 	wrapper Start 
@@ -147,6 +164,9 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #intro .section-title {
   margin-bottom: 0px;
+}
+#intro .section-title h2{
+  font-family:  'Poppins', sans-serif;
 }
 #intro .section-title p {
   padding-top: 20px;
@@ -198,13 +218,14 @@ font header .navbar-default .navbar-nav li a:hover {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: #1d192c;
+  background: #666666;
   opacity: 0.8;
 }
 #call-to-action h2 {
   padding-bottom: 20px;
   line-height: 33px;
   margin: 0;
+  font-family: 'Poppins', sans-serif;
   font-size: 30px;
 }
 #call-to-action p {
@@ -245,6 +266,7 @@ font header .navbar-default .navbar-nav li a:hover {
   padding: 100px 0;
 }
 #feature h2 {
+   font-family:  'Poppins', sans-serif;
   font-size: 28px;
   font-weight: 600;
   margin-bottom: 30px;
@@ -254,8 +276,9 @@ font header .navbar-default .navbar-nav li a:hover {
   margin-bottom: 20px;
 }
 #feature .btn-view-works {
-  background: #655E7A;
+  background: #F7931E;
   color: #fff;
+  font-weight: bold;
   padding: 10px 20px;
 }
 /*--
@@ -376,13 +399,13 @@ font header .navbar-default .navbar-nav li a:hover {
   text-align: center;
 }
 #global-header .block h1 {
-  font-weight: 100;
+  font-weight: 50px;
   font-size: 45px;
-  letter-spacing: 6px;
+  letter-spacing: 2px;
   padding-bottom: 15px;
   margin-top: 0;
   text-transform: capitalize;
-  font-family: 'Lucida Sans';
+  font-family: 'Poppins', sans-serif;
 }
 #global-header .block p {
   font-size: 16px;
@@ -800,10 +823,11 @@ footer .footer-manu ul li a:hover {
 }
 
 .botones {
-  background: #655E7A;
+  background: #F7931E;
   color: #fff;
   padding: 10px 20px;
   border-radius: 10px;
+  font-weight: bold;
 }
 .botones2 {
   padding: 15px 35px;
@@ -825,7 +849,7 @@ footer .footer-manu ul li a:hover {
   letter-spacing: 3px;
 }
 .caja{
-  font-family: : Century Gothic,CenturyGothic,AppleGothi,sans-serif;
+  font-family:  Century Gothic,CenturyGothic,AppleGothi,sans-serif;
   color: #ffffff;
   font-size: 18px;
   font-weight: 400;
@@ -840,7 +864,7 @@ footer .footer-manu ul li a:hover {
   border: 2px solid #5878ca;
 }
 .eti{
-  font-family: : Century Gothic,CenturyGothic,AppleGothi,sans-serif;
+  font-family:  Century Gothic,CenturyGothic,AppleGothi,sans-serif;
   color: #655E7A;
   font-size: 18px;
   font-weight: 400;
@@ -858,4 +882,15 @@ footer .footer-manu ul li a:hover {
   color: #fff;
   padding: 10px 20px;
   border-radius: 10px;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 25px;
+  align-items: center;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }

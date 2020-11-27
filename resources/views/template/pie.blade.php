@@ -5,15 +5,14 @@
           <div class="col-md-12">
             <div class="footer-manu">
               <ul>
-                <li><a href="https://es-la.facebook.com/">Facebook</a></li>
-                
-                <li><a href="https://twitter.com/login?lang=es">Twitter</a></li>
+                <li><i class="fa fa-facebook-square fa-2x"> </i><a href="https://es-la.facebook.com/"> Facebook</a></li>
+                <li><i class="fa fa-twitter fa-2x"> </i><a href="https://twitter.com/login?lang=es"> Twitter</a></li>
                 @auth
-                <li><a href="soporte">Soporte</a></li>
-                <li><a href="terminos">Términos y condiciones</a></li>
+                <li><i class="fa fa-support fa-2x"></i><a href="soporte">Soporte</a></li>
+                <li><i class="fa fa-thumb-tack fa-2x"></i><a href="terminos">Términos y condiciones</a></li>
                 @else
-                <li><a href="soporte1">Soporte</a></li>
-                <li><a href="terminos1">Términos y condiciones</a></li>
+                <li><i class="fa fa-support fa-2x"></i><a href="soporte1">Soporte</a></li>
+                <li><i class="fa fa-thumb-tack fa-2x"></i><a href="terminos1">Términos y condiciones</a></li>
                 @endauth
               </ul>
             </div>
