@@ -2,8 +2,7 @@
 <script>
   function llenar_municipios(entidad_id) {
     $("#municipio_id").empty();
-    var asset = '{{ asset('
-    ') }}'
+    var asset = '{{ asset('') }}'
     var ruta = asset + 'combo_municipios_x_entidad/' + entidad_id;
     $.ajax({
       type: 'GET',
@@ -58,15 +57,15 @@
             </div>
             @endif </br>
           -->
-    <div >
-      <div class="row">
-        <div class="column">
-          {!! Form::open(['url'=>'/register','enctype'=>'multipart/form-data']) !!}
+
+    <div class="row">
+      <div class="block">
+        {!! Form::open(['url'=>'/register','enctype'=>'multipart/form-data']) !!}
+        <div class="col-md-6 col-sm-12">
           <div class="form-group">
             {!! Form::label ('nombre','Nombre:') !!}
             {!! Form::text ('nombre',null,['placeholder'=>'Ingresa tu nombre','class'=>'form-control', 'required'=>'required']) !!}
           </div>
-
           <div class="form-group">
             {!! Form::label ('ap_pat','Apellito paterno:') !!}
             {!! Form::text ('ap_pat',null,['placeholder'=>'Ingresa tu apellido','class'=>'form-control', 'required'=>'required']) !!}
@@ -74,7 +73,6 @@
           <div class="form-group">
             {!! Form::label ('ap_mat','Apellito materno:') !!}
             {!! Form::text ('ap_mat',null,['placeholder'=>'Ingresa tu apellido','class'=>'form-control', 'required'=>'required']) !!}
-
           </div>
           <div class="form-group">
             {!! Form::label ('sexo','Sexo') !!}
@@ -98,7 +96,7 @@
           </div>
         </div>
 
-        <div class="column">
+        <div class="col-md-6 col-sm-12">
           <div class="form-group">
             {!! Form::label ('entidad_id','Entidad:') !!}
             {!! Form::select ('entidad_id',$entidades->pluck('nombre','id')->all(),null,['placeholder'=>'Seleccionar','class'=>'form-control','onchange'=>'llenar_municipios(this.value);','required'=>'required']) !!}
@@ -127,21 +125,22 @@
             {!! Form::label ('tipo_usuario_id','Tipo de usuario:') !!}
             {!! Form::select ('tipo_usuario_id',$tipos_usuarios->pluck('nombre','id')->all(),null,['placeholder'=>'Seleccionar','class'=>'form-control','required'=>'required']) !!}
           </div>
-          <div class="form-group">
-            {!! Form::hidden ('estatus',1,['placeholder'=>'Seleccionar','class'=>'form-control','type'=>'hidden']) !!}
-          </div>
+          <br>
           <div class="form-group">
             {!! Form::label ('foto_ruta','Imagen:') !!}
             {!! Form::file ('foto_ruta',null,['placeholder'=>'Ingresa una imagen','class'=>'form-control','required'=>'required']) !!}
           </div>
+          <div class="form-group">
+            {!! Form::hidden ('estatus',1,['placeholder'=>'Seleccionar','class'=>'form-control','type'=>'hidden']) !!}
+          </div>
+          {!! Form::close() !!}
+          <br>
+          <br>
+        </div>
+        <div class="form-group">
+          {!! Form::submit('Aceptar',['class'=>'botones']) !!}
         </div>
       </div>
-      <div class="form-group">
-        {!! Form::submit('Aceptar',['class'=>'botones']) !!}
-      </div>
-      {!! Form::close() !!}
-      <br>
-      <br>
     </div>
   </div>
 </section>

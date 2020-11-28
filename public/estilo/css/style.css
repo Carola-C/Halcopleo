@@ -183,7 +183,7 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #service .service-item i {
   font-size: 60px;
-  color: #4A4656;
+  color: #ff5757;
 }
 #service .service-item h4 {
   padding-top: 20px;
@@ -335,11 +335,11 @@ font header .navbar-default .navbar-nav li a:hover {
   padding-bottom: 0;
   font-size: 12px;
   line-height: 20px;
-  color: #353241;
+  color: #ff5757;
 }
 #testimonial .testimonial-carousel .user p span {
   display: block;
-  color: #353241;
+  color: #ff5757;
   font-weight: 600;
 }
 #testimonial .testimonial-carousel .owl-carousel .owl-pagination div {
@@ -373,7 +373,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	Slider-work Start 
 --*/
 #global-header {
-  background: url("../img/slider-bg2.jpg") no-repeat;
+  background: url("../img/slider-bg3.png");
   background-size: cover;
   padding-top: 150px;
   padding-bottom: 107px;
@@ -389,7 +389,6 @@ font header .navbar-default .navbar-nav li a:hover {
   right: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to left, #fc7a00, #F79311 60%);
   opacity: 0.8;
 }
 #global-header .block {
@@ -441,7 +440,7 @@ font header .navbar-default .navbar-nav li a:hover {
   position: relative;
 }
 #portfolio-work .block .portfolio-menu ul .active {
-  color: #655E7A;
+  color: #F7931E;
   position: relative;
 }
 #portfolio-work .block .portfolio-menu ul .active:before {
@@ -515,7 +514,7 @@ font header .navbar-default .navbar-nav li a:hover {
 #portfolio-work .block .portfolio-contant ul li a span {
   font-style: italic;
   font-size: 13px;
-  color: #655E7A;
+  color: #F7931E;
 }
 #portfolio-work .block .portfolio-contant ul img {
   width: 100%;
@@ -694,7 +693,7 @@ font header .navbar-default .navbar-nav li a:hover {
 #contact-form .block button {
   width: 100%;
   height: 60px;
-  background: #47424C;
+  background: #666666;
   border: none;
   color: #fff;
   font-family: 'Open Sans', sans-serif;
@@ -854,7 +853,7 @@ footer .footer-manu ul li a:hover {
   font-size: 18px;
   font-weight: 400;
   text-align: center;
-  background: #655E7A;
+  background: #F7931E;
   margin: 0 0 25px;
   overflow: hidden;
   padding: 20px;
@@ -865,20 +864,20 @@ footer .footer-manu ul li a:hover {
 }
 .eti{
   font-family:  Century Gothic,CenturyGothic,AppleGothi,sans-serif;
-  color: #655E7A;
+  color: #F7931E;
   font-size: 18px;
   font-weight: 400;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
-  border: 2px solid #655E7A;
+  border: 2px solid #666666;
   margin: 10px;
   padding: 20px;
 }
 .bot {
   width: 80px;
-  background: #655E7A;
+  background:#F7931E;
   color: #fff;
   padding: 10px 20px;
   border-radius: 10px;

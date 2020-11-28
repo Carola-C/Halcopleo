@@ -6,7 +6,7 @@
         <div class="row">
           <div class="col-md-10 col-md-offset-2">
             <div class="block">
-              <h1 class="animated fadeInUp">Oferta de empleo, consejos de entrevistas, consejos sobre curriculum y más</h1>
+              <h1 class="animated fadeInUp">Oferta de empleo, Consejos de entrevistas, Consejos sobre curriculum y Más.</h1>
               <p class="animated fadeInUp">Halcopleo es tu mejor opción para información</br> sobre el empleo y su oferta</p>
             </div>
           </div>
