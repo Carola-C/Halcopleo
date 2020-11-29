@@ -19,6 +19,7 @@ class CreateEmpresasTable extends Migration
 $table->string('rfc',250);
 $table->foreignId('entidad_id')->references('id')->on('entidades');
 $table->foreignId('municipio_id')->references('id')->on('municipios');
+$table->string('foto_ruta',100);
 $table->string('colonia',150);
 $table->string('calle',150);
 $table->integer('no_edificio')->nullable();
