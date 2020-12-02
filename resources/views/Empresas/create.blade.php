@@ -50,7 +50,7 @@
             <div class="row">
               <div class="col-md-6 col-sm-12">
                 <div class="block">
-                  {!! Form::open(['url'=>'/empresas']) !!}
+                  {!! Form::open(['url'=>'/empresas','enctype'=>'multipart/form-data']) !!}
                     <div class="form-group">
                       {!! Form::label ('razon_social','Nombre:') !!}
 			{!! Form::text ('razon_social',null,['placeholder'=>'Ingresa nombre','class'=>'form-control', 'required'=>'required']) !!}
@@ -87,7 +87,10 @@
 			{!! Form::text ('cp',null,['placeholder'=>'Ingresa código postal','class'=>'form-control', 'required'=>'required']) !!}
                     </div>
                     
-
+                    <div class="form-group">
+                      {!! Form::label ('foto_ruta','Logo de la empresa:') !!}
+			{!! Form::file ('foto_ruta',null,['placeholder'=>'Ingresa una imagen','class'=>'form-control']) !!}
+                    </div>
                     <div class="form-group">
                       
 			{!! Form::hidden ('estatus',1,['placeholder'=>'Seleccionar','class'=>'form-control']) !!}

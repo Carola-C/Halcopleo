@@ -9,6 +9,9 @@ use App\Entidades;
 use App\Municipios;
 use App\Empresas_empleadores;
 use App\Ofertas;
+use App\Providers\RouteServiceProvider;
+use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Storage;
 class EmpresasController extends Controller
 {
     public function __construct(){
@@ -46,6 +49,7 @@ class EmpresasController extends Controller
             'rfc' => ['String','min:12','max:12','required','unique:App\Empresas,rfc'],
             'entidad_id' => ['required'],
             'municipio_id' => ['required'],
+            'foto_ruta' => ['required','image'],
             'colonia' => ['String','min:3', 'max:150','required'],
             'calle' => ['String','min:3', 'max:150','required'],
             'cp' => ['Integer','digits:5','required'],
@@ -58,6 +62,11 @@ class EmpresasController extends Controller
             return redirect()->back()->withInput()->withErrors($v->errors());
         }
         $datos = $request->all();
+        $rutaarchivos ="../storage/empresas/";
+        $archivo = $request->file("foto_ruta");
+        $ruta = time().$archivo->getClientOriginalName();
+        $r1 = Storage::disk('empresas')->put($ruta, \File::get($archivo));
+        $datos['foto_ruta'] =$ruta;
         $empresa=Empresas::create($datos);
         $user = Auth::user();
         if($user->tipo_usuario_id ==1){
