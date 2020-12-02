@@ -15,14 +15,14 @@
                 <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="{!! asset('bienvenida') !!}">
-                  <img src="{!! asset('estilo/img/logo1.png') !!}" height="60px" alt="Logo">
+                  <img src="{!! asset('estilo/img/logo1.png') !!}" height="70px" alt="Logo">
                 </a>
               </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav navbar-right">
                     @auth
-                      <li><a href="{!! asset('inicio') !!}">Inicio</a></li>
+                      <li><a href="{!! asset('inicio') !!}" >Inicio</a></li>
                       <li><a href="{!! asset('cruds') !!}">Catálogos</a></li>
                       <li><a href="{!! asset('curriculums_c') !!}">Currículum</a></li>
                       <li><a href="{!! asset('vist_guias') !!}">Guías</a></li>
@@ -32,12 +32,10 @@
                       <li><a href="{!! asset('logout') !!}">Cerrar sesión</a></li>
                     @else
                       <li><a href="{!! asset('bienvenida') !!}">Inicio</a></li>
-                      <li><a href="{!! asset('login') !!}">Iniciar sesión</a></li>
+                      <li><a href="{!! asset('login') !!}">Iniciar Sesión</a></li>
                       
                     <li><a href="{!! asset('register') !!}">Registrarse</a></li>
                     @endauth
-                  
-
                     <!--
                     <li><a href="contact.html">Contáctanos</a></li>-->
                   </ul>

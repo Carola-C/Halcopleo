@@ -19,7 +19,6 @@
   	<table id="tabla" class="customers">
       <thead>
 		<tr>
-			
 			<th>Tipo de guía</th>
 			<th>Nombre</th>
 			<th>Estatus</th>
