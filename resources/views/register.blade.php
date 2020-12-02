@@ -94,6 +94,9 @@
             {!! Form::label ('password','Contraseña:') !!}
             {!! Form::text ('password',null,['placeholder'=>'Ingresa tu contraseña','class'=>'form-control','required'=>'required']) !!}
           </div>
+          <div class="form-group">
+          {!! Form::submit('Aceptar',['class'=>'botones']) !!}
+        </div>
         </div>
 
         <div class="col-md-6 col-sm-12">
@@ -137,9 +140,7 @@
           <br>
           <br>
         </div>
-        <div class="form-group">
-          {!! Form::submit('Aceptar',['class'=>'botones']) !!}
-        </div>
+        
       </div>
     </div>
   </div>
