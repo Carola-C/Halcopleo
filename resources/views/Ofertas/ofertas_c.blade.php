@@ -113,15 +113,16 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
-                  <h1>Listado de ofertas</h1>
+                  <h1>Mira todas las ofertas al momento</h1>
+                  <br>
                     <div>
-    <a class="botones" href="postulaciones/">Mis postulaciones</a>
-    <a class="botones" href="index_f/">Favoritos</a>
-    
-  </div>
+                      <a class="botones" href="postulaciones/">Mis postulaciones</a>
+                      <a class="botones" href="index_f/">Favoritos</a>
+                    </div>
   <div>
     <br>
     <br>
+  <!--
     <table id="tabla" class="customers">
       <thead>
     <tr>
@@ -195,6 +196,7 @@
     @endforeach 
     </tbody>
   </table>
+  -->
   </div>
  
 <script type="text/javascript">
@@ -202,9 +204,47 @@
 </script> 
      </div>
               </div>
-              
             </div>
-
+            
+              @foreach($ofertas as $oferta)
+                <div class="col-sm-6 col-md-3">
+                    @continue($ban= 0)
+                    <a href="{!! 'show1/'.$oferta->id !!}">
+                    <img align="center" href="{!! 'show1/'.$oferta->id !!}" src="{{ asset('../storage/empresas') }}/{!! $oferta->empresas->foto_ruta !!}" width="200px">
+                    <p align="center" class="animated fadeIn">{!! $oferta->empresas->razon_social !!}</p>
+                    <p align="center" class="animated fadeIn">{!! $oferta->nombre !!}</p>
+                    <p align="center" class="animated fadeIn">{!! $oferta->municipios->nombre !!}, {!! $oferta->entidades->nombre !!}</p>
+                    </a>
+                    
+                    
+                    <?php $ban=false;?>
+                    @foreach($favs as $fav)
+                      @if($fav->oferta_id == $oferta->id)
+                        <a id="{{$oferta->id}}" value="1" onclick="prueba({{$oferta->id}})">
+                        <img id="oferta{{$oferta->id}}" style="cursor:pointer;" src="{!! asset('estilo/img/corazon2.png') !!}">
+                        </a>
+                        <?php $ban=true;?> 
+                      @endif
+                    @endforeach            
+              
+                  @if($ban== 0)
+                    <a id="{{$oferta->id}}" value="0" onclick="prueba({{$oferta->id}})">
+                    <img id="oferta{{$oferta->id}}" style="cursor:pointer;" src="{!! asset('estilo/img/corazon1.png') !!}">
+                    </a>
+                  @endif
+                  <?php $ban1=false;?>
+                  @foreach($postulaciones as $postulacion)
+            	      @if($postulacion->oferta_id == $oferta->id)
+            		      <a id="post{{$oferta->id}}" align="left" class="botones" value="0" onclick="postular({{$oferta->id}})">Dejar de postular</a>
+            		      <?php $ban1=true;?>
+            	      @endif
+                  @endforeach
+                  @if($ban1 == 0)
+                    <a class="botones" align="left" onclick="postular({{$oferta->id}})">Postular</a>
+                  @endif
+                </div>
+              @endforeach
+            
           </div>
         </section>
 

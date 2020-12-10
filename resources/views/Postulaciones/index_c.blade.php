@@ -14,7 +14,7 @@
   </div>
   <div>
   	<br>
-  	<br>
+  	<br><!--
   	<table id="tabla" class="customers">
       <thead>
 		<tr>
@@ -44,7 +44,7 @@
 			
 			<td>
 				<a class="botones" href="{!! 'show_p/'.$postulacion->id !!}">Detalle</a>
-				<!--<a class="botones" href="{!! 'postulaciones/'.$postulacion->id.'/edit' !!}">Editar</a>-->
+				
 				<br><br>
 				{!! Form ::open(['method'=>'DELETE' , 'url' =>'/postulaciones/'.$postulacion->id])!!}
 					{!! Form::submit('Eliminar',['class'=>'botones']) !!}
@@ -54,17 +54,41 @@
 		@endforeach	
 		</tbody>
 	</table>
+	-->
   </div>
  <script type="text/javascript">
   $('#tabla').DataTable();
 </script>
 			
      </div>
+	 				@foreach($postulaciones as $postulacion)
+					 	<div class="col-sm-6 col-md-3">
+						 <a href="{!! 'show_p/'.$postulacion->id !!}">
+		 					 <img src="{{ asset('../storage/empresas') }}/{!! $postulacion->ofertas->empresas->foto_ruta !!}" width="200px">
+							  <p align="center" class="animated fadeIn">{!! $postulacion->ofertas->empresas->razon_social !!}</p>
+							  <p align="center" class="animated fadeIn">{!! $postulacion->ofertas->nombre !!}</p>
+							  @if($postulacion->estatus == 1)
+								<p align="center" class="animated fadeIn">Postulando</p>
+							  @endif
+							  @if($postulacion->estatus == 0)
+								<p align="center" class="animated fadeIn">Sin postular</p>
+							  @endif
+							  @if($postulacion->estatus == 2)
+								<p align="center" class="animated fadeIn">Empleador elimino la postulación pero aún puedes ver la información</p>
+							  @endif
+							  
+								{!! Form ::open(['method'=>'DELETE' , 'url' =>'/postulaciones/'.$postulacion->id])!!}
+								{!! Form::submit('Eliminar',['class'=>'botones']) !!}
+								{!! Form::close() !!}
+						 </a>
+		  				</div>
+		 			@endforeach
               </div>
               
             </div>
 
           </div>
+		  	
         </section>
 
   

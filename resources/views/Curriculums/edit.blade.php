@@ -209,7 +209,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
-                  <h1>Editar curriculum</h1>
+                  <h1>Aquí puedes editar tu currículum</h1>
                   <a class="botones" href="{!! asset('curriculums_c') !!}">Regresar</a>
                 </div>
               </div>
@@ -259,11 +259,11 @@
       {!! Form::hidden ('candidato_id',$curriculum->candidato_id,['placeholder'=>'Seleccionar','class'=>'form-control']) !!}
                     </div>
                     <div class="form-group">
-                      {!! Form::label ('foto_ruta','Imagen:') !!}
+                      {!! Form::label ('foto_ruta','Selecciona una foto para tu currículum:') !!}
       {!! Form::File ('foto_ruta',null,['placeholder'=>'Ingresa una imagen','class'=>'form-control', 'required'=>'required']) !!}
                     </div>
                     <div class="form-group">
-                      {!! Form::label ('grado_max_id','Último grado de estudios cursado:') !!}
+                      {!! Form::label ('grado_max_id','¿Cuál es el último grado de estudio que cursaste?') !!}
       {!! Form::select ('grado_max_id',$grados_max_estudios->pluck('nombre','id')->all(),$curriculum->grado_max_id,['placeholder'=>'Seleccionar','class'=>'form-control', 'required'=>'required']) !!}
                     </div>
                     <div class="form-group">
@@ -304,7 +304,7 @@
               
               <div class="col-md-6 col-sm-12">
                 <div class="block" id="agregar">
-                  <h1>Habilidades</h1>
+                  <h1>Tus habilidades</h1>
                   
                   <form id="form2id">
                     @foreach($habilidades as $habilidad)
@@ -333,7 +333,7 @@
               </div>
               <div class="col-md-6 col-sm-12">
                 <div class="block" id="agregar">
-                  <h1>Conocimientos</h1>
+                  <h1>Tus conocimientos</h1>
                   <form id="formid">
                     @foreach($conocimientos as $conocimiento)
                     @continue($ban=0)
@@ -371,7 +371,7 @@
           <div class="container">
             <div class="row">
               <div class="block">
-                  <div class="caja"> Estudios
+                  <div class="caja"> Tus estudios
                     
                   </div>
                   
@@ -477,7 +477,7 @@
 <section id="contact-form">
           <div class="container">
             <div class="row">
-              <div class="caja"> Experiencias
+              <div class="caja"> Tus experiencias
                     
                   </div>
                   

@@ -164,7 +164,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
-                  <h1>Curriculum</h1>
+                  <h1>Aquí puedes ver tu currículum</h1>
                   
                   @foreach($curriculum as $curri)
                   <a class="botones" href="{!! 'curriculum/'.$curri->id !!}">Editar</a>

@@ -104,7 +104,7 @@ class CurriculumsController extends Controller
             $fecha = date("d-m-Y");
             $prefijo = $fecha."_".$hora;
             $archivo = $request->file("foto_ruta");
-            $ruta = $prefijo.'_'.$archivo->getClientOriginalName();
+            $ruta = time().$archivo->getClientOriginalName();
             $r1 = Storage::disk('curriculums')->put($ruta, \File::get($archivo));
             
             if ($r1) {

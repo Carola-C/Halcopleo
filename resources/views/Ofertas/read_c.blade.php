@@ -126,7 +126,9 @@
 	<h2 align="left">Código postal: {!! $oferta->cp !!}</h2>
 	<h2 align="left">Estatus: {!! $oferta->estatus !!}</h2>
 	<br>
-
+  @if($postulacion== null)
+  <a class="botones" onclick="postular({{$oferta->id}})">Postular</a>
+  @else
   @if($postulacion->estado== 1)
 	<a id="{{$oferta->id}}" value="1" onclick="prueba({{$oferta->id}})">
               <img id="oferta{{$oferta->id}}" style="cursor:pointer;" src="{!! asset('estilo/img/corazon2.png') !!}">
@@ -147,6 +149,8 @@
             <a class="botones" onclick="postular({{$oferta->id}})">Postular</a>
             
             @endif
+  @endif
+  
             <br><br>
 	<a class="botones" href="{!! asset('vist_ofer') !!}" >Regresar</a>
                 </div>
