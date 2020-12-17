@@ -3,6 +3,8 @@
 /public/storage
 /storage/*.key
 /storage/curriculums
+/storage/empresas
+/storage/usuarios
 /vendor
 .env
 .env.backup

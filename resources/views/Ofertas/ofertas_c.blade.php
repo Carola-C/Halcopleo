@@ -108,12 +108,23 @@
   
 
   @section('contenido_central')
-  <section id="contact-form">
+  <!-- Slider Start -->
+  <section id="global-header">
           <div class="container">
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
                   <h1>Mira todas las ofertas al momento</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+  <section id="contact-form">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="block">
                   <br>
                     <div>
                       <a class="botones" href="postulaciones/">Mis postulaciones</a>
