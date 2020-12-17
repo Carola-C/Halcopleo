@@ -80,6 +80,7 @@
                   <h1>Detalle de empresa</h1>
                   
       @foreach($empresas as $empresa)
+      <img align="center" src="{{ asset('../storage/empresas') }}/{!! $empresa->foto_ruta !!}" width="200px">
   <h2 align="left">Nombre: {!! $empresa->razon_social !!}</h2>
   <h2 align="left">RFC: {!! $empresa->rfc !!}</h2>
   <h2 align="left">Entidad: {!! $empresa->entidades->nombre !!}</h2>
@@ -88,7 +89,7 @@
   <h2 align="left">Calle: {!! $empresa->calle !!}</h2>
   <h2 align="left">N°: {!! $empresa->no_edificio !!}</h2>
   <h2 align="left">Código postal: {!! $empresa->cp !!}</h2>
-  <h2 align="left">Estatus: {!! $empresa->estatus !!}</h2>
+  
   <br>
   
       @endforeach

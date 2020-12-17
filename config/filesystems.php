@@ -62,6 +62,10 @@ return [
             'driver' => 'local',
             'root' => storage_path('curriculums'),
         ],
+        'empresas'=>[
+            'driver' => 'local',
+            'root' => storage_path('empresas'),
+        ],
 
         's3' => [
             'driver' => 's3',
