@@ -6,7 +6,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
-                  <h1>Detalle de curriculum</h1>
+                  <h1>Detalles de Curriculum</h1>
 					<h2 align="left">ID: {!! $curriculum->id !!}</h2>
 	<h2 align="left">Nombre: {!! $curriculum->users->nombre !!}</h2>
 	<h2 align="left">Tipo usuario: {!! $curriculum->foto_ruta !!}</h2>

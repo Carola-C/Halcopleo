@@ -9,7 +9,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
-                	<h1>Listado de conocimientos-curriculums</h1>
+                	<h1>Catálogo de Conocimientos-Curriculums</h1>
                     <div>
   	<a class="botones" href="conocimientos_curriculums/create">Crear</a>
   	
@@ -37,7 +37,7 @@
 			
 			<td>{!! $conocimiento_curriculum->estatus !!}</td>
 			<td>
-				<a class="botones" href="{!! 'conocimientos_curriculums/'.$conocimiento_curriculum->id !!}">Detalle</a>
+				<a class="botones" href="{!! 'conocimientos_curriculums/'.$conocimiento_curriculum->id !!}">Detalles</a>
 				
 				<a class="botones" href="{!! 'conocimientos_curriculums/'.$conocimiento_curriculum->id.'/edit' !!}">Editar</a>
 				<br><br>

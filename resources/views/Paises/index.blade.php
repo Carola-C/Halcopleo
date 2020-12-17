@@ -7,7 +7,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
-                	<h1>Listado de paises</h1>
+                	<h1>Catálogo de Paises</h1>
                     <div>
                     	<a class="botones" href="{!! asset('cruds') !!}">Regresar</a>
   	<a class="botones" href="paises/create">Crear</a>
@@ -34,7 +34,7 @@
 			<td>{!! $pais->clave !!}</td>
 			<td>{!! $pais->estatus !!}</td>
 			<td>
-				<a class="botones" href="{!! 'paises/'.$pais->id !!}">Detalle</a>
+				<a class="botones" href="{!! 'paises/'.$pais->id !!}">Detalles</a>
 				<a class="botones" href="{!! 'paises/'.$pais->id.'/edit' !!}">Editar</a>
 				<br>
 				<br>

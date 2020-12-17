@@ -7,7 +7,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
-                	<h1>Listado de habilidades-curriculums</h1>
+                	<h1>Catálogo de Habilidades-Curriculums</h1>
                     <div>
   	<a class="botones" href="habilidades_curriculums/create">Crear</a>
   	
@@ -32,7 +32,7 @@
 			
 			<td>{!! $habilidades_curriculum->estatus !!}</td>
 			<td>
-				<a class="botones" href="{!! 'habilidades_curriculums/'.$habilidades_curriculum->id !!}">Detalle</a>
+				<a class="botones" href="{!! 'habilidades_curriculums/'.$habilidades_curriculum->id !!}">Detalles</a>
 				<a class="botones" href="{!! 'habilidades_curriculums/'.$habilidades_curriculum->id.'/edit' !!}">Editar</a>
 				<br>
 				<br>

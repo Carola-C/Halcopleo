@@ -125,7 +125,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
-                  <br>
+
                     <div>
                       <a class="botones" href="postulaciones/">Mis postulaciones</a>
                       <a class="botones" href="index_f/">Favoritos</a>

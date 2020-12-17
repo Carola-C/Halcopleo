@@ -49,7 +49,7 @@
         
 			</td>
 			<td>
-				<a class="botones" href="{!! 'postulaciones/'.$postulacion->id !!}">Detalle</a>
+				<a class="botones" href="{!! 'postulaciones/'.$postulacion->id !!}">Detalles</a>
 				<!--<a class="botones" href="{!! 'postulaciones/'.$postulacion->id.'/edit' !!}">Editar</a>-->
 				<br><br>
 				{!! Form ::open(['method'=>'DELETE' , 'url' =>'/postulaciones/'.$postulacion->id])!!}

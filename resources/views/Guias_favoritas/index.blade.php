@@ -46,7 +46,7 @@
 			<td>{!! $guia_favorita->guias->nombre !!}</td>
 			
 			<td>
-				<a class="botones" href="{!! 'guias/'.$guia_favorita->guia_id !!}">Detalle</a>
+				<a class="botones" href="{!! 'guias/'.$guia_favorita->guia_id !!}">Detalles</a>
 				<!--<a class="botones" href="{!! 'guias_favoritas/'.$guia_favorita->id !!}">Detalle</a>-->
 				<!--<a class="botones" href="{!! 'guias_favoritas/'.$guia_favorita->id.'/edit' !!}">Editar</a>
 				<br><br>

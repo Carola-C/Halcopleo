@@ -66,6 +66,7 @@
 			<td>
 				<a class="botones" href="{!! 'show1/'.$postulacion->oferta_id !!}">Detalle</a>
 				
+
 				<br><br>
 				 
             

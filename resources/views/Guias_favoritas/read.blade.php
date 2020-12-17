@@ -6,7 +6,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
-                  <h1>Detalle de favorito</h1>
+                  <h1>Detalles de Favorito</h1>
                   <h2 align="left">ID: {!! $guia_favorita->id !!} </h2>
 					<h2 align="left">Nombre: {!! $guia_favorita->users->nombre !!} {!! $guia_favorita->users->ap_pat !!} {!! $guia_favorita->users->ap_mat !!} </h2>
 					<h2 align="left">Nombre: {!! $guia_favorita->guias->nombre !!} </h2>

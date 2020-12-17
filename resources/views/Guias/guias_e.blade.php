@@ -7,7 +7,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
-                	<h1>Listado de guías</h1>
+                	<h1>Catálogo de Guías</h1>
                     <div>
                      <!-- <a class="botones" href="vist_guias">Regresar</a>-->
   	<a class="botones" href="guias/create">Crear</a>

@@ -121,7 +121,7 @@
               	<img id="guia{{$guia->id}}" style="cursor:pointer;" src="{!! asset('estilo/img/corazon1.png') !!}">
             	</a>
         	@endif
-				<a class="botones" href="{!! 'guias/'.$guia->id !!}">Detalle</a>
+				<a class="botones" href="{!! 'guias/'.$guia->id !!}">Detalles</a>
 				
 				
 		</tr>

@@ -7,7 +7,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
-                	<h1>Listado de grados de estudios</h1>
+                	<h1>Catálogo de Grado de Estudios</h1>
                     <div>
                     	<a class="botones" href="{!! asset('cruds') !!}">Regresar</a>
   	<a class="botones" href="grados_max_estudios/create">Crear</a>
@@ -33,7 +33,7 @@
 			
 			<td>{!! $grados_max_estudio->estatus !!}</td>
 			<td>
-				<a class="botones" href="{!! 'grados_max_estudios/'.$grados_max_estudio->id !!}">Detalle</a>
+				<a class="botones" href="{!! 'grados_max_estudios/'.$grados_max_estudio->id !!}">Detalles</a>
 				<a class="botones" href="{!! 'grados_max_estudios/'.$grados_max_estudio->id.'/edit' !!}">Editar</a>
 				<br>
 				<br>

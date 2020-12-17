@@ -19,7 +19,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
-                	<h1>Listado de guías</h1>
+                	<h1>Catálogo de Guías</h1>
                     <div>
                       <a class="botones" href="vist_guias">Regresar</a>
   	<a class="botones" href="guias/create">Crear</a>
@@ -54,7 +54,7 @@
       <td>No aceptado</td>
       @endif
 			<td>
-				<a class="botones" href="{!! 'guias/'.$guia->id !!}">Detalle</a>
+				<a class="botones" href="{!! 'guias/'.$guia->id !!}">Detalles</a>
 				<a class="botones" href="{!! 'guias/'.$guia->id.'/edit' !!}">Editar</a>
 				<br><br>
 				{!! Form ::open(['method'=>'DELETE' , 'url' =>'/guias/'.$guia->id])!!}

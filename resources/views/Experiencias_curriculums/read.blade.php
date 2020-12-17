@@ -6,7 +6,7 @@
             <div class="row">
               <div class="col-md-12"> 
                 <div class="block">
-                  <h1>Detalle de experiencia-curriculum</h1>
+                  <h1>Detalles de Experiencia-Curriculum</h1>
 					<h2 align="left">Lugar: {!! $experiencia_curriculum->experiencias->nombre_lugar !!}, {!! $experiencia_curriculum->experiencias->ciudad !!}, {!! $experiencia_curriculum->experiencias->paises->nombre !!}</h2>
 	<h2 align="left">Tiempo: {!! $experiencia_curriculum->experiencias->tiempo_inicio !!} - {!! $experiencia_curriculum->experiencias->tiempo_fin !!} </h2>
 	<h2 align="left">Cargo: {!! $experiencia_curriculum->experiencias->cargo !!}</h2>

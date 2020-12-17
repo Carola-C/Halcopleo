@@ -6,7 +6,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
-                  <h1>Detalle de habilidad-curriculum</h1>
+                  <h1>Detalles de Habilidad-Curriculum</h1>
 					<h2 align="left">ID: {!! $habilidad_curriculum->id !!}</h2>
 	<h2 align="left">ID candidato: {!! $habilidad_curriculum->curriculums->candidato_id !!} </h2>
 	

@@ -6,7 +6,7 @@
             <div class="row">
               <div class="col-md-12"> 
                 <div class="block">
-                  <h1>Detalle de empresa-empleador</h1>
+                  <h1>Detalles de Empresa-Empleador</h1>
 					<h2 align="left">ID: {!! $empresa_empleador->id !!}</h2>
 	<h2 align="left">Nombre empleador: {!! $empresa_empleador->users->nombre !!} {!! $empresa_empleador->users->ap_pat !!} {!! $empresa_empleador->users->ap_mat !!} </h2>
 	

@@ -7,7 +7,7 @@
               <div class="col-md-12">
                 <div class="block"> 
                 	
-                  <h1>Detalle de experiencia</h1>
+                  <h1>Detalles de Experiencia</h1>
                   
           <h2 align="left">Nombre negocio/empresa: {!! $experiencia->nombre_lugar !!}</h2>
           <h2 align="left">Periodo: {!! $experiencia->tiempo_inicio !!} - {!! $experiencia->tiempo_fin !!}</h2>

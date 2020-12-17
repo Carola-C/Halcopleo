@@ -6,7 +6,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
-                  <h1>Detalle de prestacion-oferta</h1>
+                  <h1>Detalles de Prestacion-Oferta</h1>
 					<h2 align="left">ID: {!! $prestacion_oferta->id !!}</h2>
 	<h2 align="left">Empresa: {!! $prestacion_oferta->ofertas->nombre !!} </h2>
 	

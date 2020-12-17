@@ -6,7 +6,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
-                  <h1>Detalle de evaluación</h1>
+                  <h1>Detalles de Evaluación</h1>
 					<h2 align="left">ID: {!! $evaluacion_candidato->id !!}</h2>
 	<h2 align="left">Empresa: {!! $evaluacion_candidato->postulaciones->id !!} </h2>
 	<h2 align="left">Candidato: {!! $evaluacion_candidato->postulaciones->candidato_id !!} </h2>

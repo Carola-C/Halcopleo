@@ -6,7 +6,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
-                  <h1>Detalle de tipo de guía</h1>
+                  <h1>Detalles de Tipo de Guía</h1>
                   <h2 align="left">ID: {!! $tipo_guia->id !!}</h2>
 					<h2 align="left">Nombre: {!! $tipo_guia->nombre !!}</h2>
 
