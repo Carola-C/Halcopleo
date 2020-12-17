@@ -6,7 +6,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
-                  <h1>Detalle de municipio</h1>
+                  <h1>Detalles de municipio</h1>
 					<h2 align="left">ID entidad: {!! $municipio->entidad_id !!}</h2>
 					<h2 align="left">Nombre de la entidad: {!! $municipio->entidades->nombre !!}</h2>
 					<h2 align="left">Nombre: {!! $municipio->nombre !!}</h2>

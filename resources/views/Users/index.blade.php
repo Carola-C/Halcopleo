@@ -7,7 +7,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
-                	<h1>Listado de usuarios</h1>
+                	<h1>Catálogo de Usuarios</h1>
                     <div>
                     	<a class="botones" href="{!! asset('cruds') !!}">Regresar</a>
   	<a class="botones" href="users/create">Crear</a> 
@@ -38,7 +38,7 @@
 			
 			<td>{!! $user->estatus !!}</td>
 			<td>
-				<a class="botones" href="{!! 'users/'.$user->id !!}">Detalle</a>
+				<a class="botones" href="{!! 'users/'.$user->id !!}">Detalles</a>
 				<!--<a class="botones" href="{!! 'users/'.$user->id.'/edit' !!}">Editar</a>-->
 				<br>
 				<br> 

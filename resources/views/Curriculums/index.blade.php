@@ -7,7 +7,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
-                	<h1>Listado de curriculums</h1>
+                	<h1>Catálogo de Curriculums</h1>
                     <div>
                     	<a class="botones" href="{!! asset('cruds') !!}">Regresar</a>
   	<!--<a class="botones" href="curriculums/create">Crear</a>-->
@@ -37,7 +37,7 @@
 			
 			<td>{!! $curriculum->estatus !!}</td>
 			<td>
-				<a class="botones" href="{!! 'curriculums/'.$curriculum->id !!}">Detalle</a>
+				<a class="botones" href="{!! 'curriculums/'.$curriculum->id !!}">Detalles</a>
 				<!--<br>
 				<br>
 				<a class="botones" href="{!! 'curriculums/'.$curriculum->id.'/edit' !!}">Editar</a>-->

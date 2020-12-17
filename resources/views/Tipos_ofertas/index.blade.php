@@ -7,7 +7,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
-                	<h1>Listado de tipos de ofertas</h1>
+                	<h1>Catálogo de Tipos de Ofertas</h1>
                     <div>
                     	<a class="botones" href="{!! asset('cruds') !!}">Regresar</a>
   	<a class="botones" href="tipos_ofertas/create">Crear</a>
@@ -32,7 +32,7 @@
 			<td>{!! $tipo_empresa->nombre !!}</td>
 			<td>{!! $tipo_empresa->estatus !!}</td>
 			<td>
-				<a class="botones" href="{!! 'tipos_ofertas/'.$tipo_empresa->id !!}">Detalle</a>
+				<a class="botones" href="{!! 'tipos_ofertas/'.$tipo_empresa->id !!}">Detalles</a>
 				<a class="botones" href="{!! 'tipos_ofertas/'.$tipo_empresa->id.'/edit' !!}">Editar</a>
 				<br><br>
 				{!! Form ::open(['method'=>'DELETE' , 'url' =>'/tipos_ofertas/'.$tipo_empresa->id])!!}

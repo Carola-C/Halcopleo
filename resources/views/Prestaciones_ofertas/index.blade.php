@@ -7,7 +7,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
-                	<h1>Listado de prestaciones-ofertas</h1>
+                	<h1>Catálogo de Prestaciones-Ofertas</h1>
                     <div>
   	<a class="botones" href="prestaciones_ofertas/create">Crear</a>
   	
@@ -32,7 +32,7 @@
 			
 			<td>{!! $prestacion_oferta->estatus !!}</td>
 			<td>
-				<a class="botones" href="{!! 'prestaciones_ofertas/'.$prestacion_oferta->id !!}">Detalle</a>
+				<a class="botones" href="{!! 'prestaciones_ofertas/'.$prestacion_oferta->id !!}">Detalles</a>
 				<a class="botones" href="{!! 'prestaciones_ofertas/'.$prestacion_oferta->id.'/edit' !!}">Editar</a>
 				<br><br>
 				{!! Form ::open(['method'=>'DELETE' , 'url' =>'/prestaciones_ofertas/'.$prestacion_oferta->id])!!}

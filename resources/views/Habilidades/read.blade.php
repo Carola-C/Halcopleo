@@ -6,7 +6,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
-                  <h1>Detalle de habilidad</h1>
+                  <h1>Detalles de Habilidad</h1>
 					<h2 align="left">Nombre: {!! $habilidad->nombre !!}</h2>
 
 					<h2 align="left">Estatus: {!! $habilidad->estatus !!}</h2>

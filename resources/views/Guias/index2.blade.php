@@ -65,7 +65,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
-                	<h1>Listado de guías</h1>
+                	<h1>Catálogo de Guías</h1>
                     <div>
   	<a class="botones" href="guias_favoritas">Favoritos</a>
   	<a class="botones" href="guias">Mis guías</a>
@@ -109,7 +109,7 @@
               	<img id="guia{{$guia->id}}" style="cursor:pointer;" src="{!! asset('estilo/img/corazon1.png') !!}">
             	</a>
         	@endif
-				<a class="botones" href="{!! 'guias/'.$guia->id !!}">Detalle</a>
+				<a class="botones" href="{!! 'guias/'.$guia->id !!}">Detalles</a>
 				
 				
 		</tr>

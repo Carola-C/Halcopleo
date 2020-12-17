@@ -23,7 +23,7 @@
                 <div class="row">
                   <div class="col-md-12">
                     <div class="block">
-                      <h1>Listado de empresas</h1>
+                      <h1>Catálogo de Empresas</h1>
                         <div>
         <a class="botones" href="empresas/create">Crear</a>
         
@@ -77,7 +77,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
-                  <h1>Detalle de empresa</h1>
+                  <h1>Detalles de empresa</h1>
                   
       @foreach($empresas as $empresa)
       <img align="center" src="{{ asset('../storage/empresas') }}/{!! $empresa->foto_ruta !!}" width="200px">

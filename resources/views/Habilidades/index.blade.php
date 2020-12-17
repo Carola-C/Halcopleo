@@ -7,7 +7,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
-                	<h1>Listado de habilidades</h1>
+                	<h1>Catálogo de Habilidades</h1>
                     <div>
                     	<a class="botones" href="{!! asset('cruds') !!}">Regresar</a>
   	<a class="botones" href="habilidades/create">Crear</a>
@@ -33,7 +33,7 @@
 			
 			<td>{!! $habilidad->estatus !!}</td>
 			<td>
-				<a class="botones" href="{!! 'habilidades/'.$habilidad->id !!}">Detalle</a>
+				<a class="botones" href="{!! 'habilidades/'.$habilidad->id !!}">Detalles</a>
 				<a class="botones" href="{!! 'habilidades/'.$habilidad->id.'/edit' !!}">Editar</a>
 				<br>
 				<br>

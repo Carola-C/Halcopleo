@@ -7,7 +7,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
-                	<h1>Listado de evaluaciones de candidatos</h1>
+                	<h1>Catálogo de Evaluaciones de Candidatos</h1>
                     <div>
   	<a class="botones" href="evaluaciones_candidatos/create">Crear</a>
   	
@@ -32,7 +32,7 @@
 			
 			<td>{!! $evaluacion_candidato->estatus !!}</td>
 			<td>
-				<a class="botones" href="{!! 'evaluaciones_candidatos/'.$evaluacion_candidato->id !!}">Detalle</a>
+				<a class="botones" href="{!! 'evaluaciones_candidatos/'.$evaluacion_candidato->id !!}">Detalles</a>
 				<a class="botones" href="{!! 'evaluaciones_candidatos/'.$evaluacion_candidato->id.'/edit' !!}">Editar</a>
 				<br><br>
 				{!! Form ::open(['method'=>'DELETE' , 'url' =>'/evaluaciones_candidatos/'.$evaluacion_candidato->id])!!}

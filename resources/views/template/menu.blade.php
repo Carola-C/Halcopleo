@@ -21,7 +21,7 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav navbar-right">
-                    @auth
+                    <!--@auth
                       <li><a href="{!! asset('inicio') !!}" >Inicio</a></li>
                       <li><a href="{!! asset('cruds') !!}">Catálogos</a></li>
                       <li><a href="{!! asset('curriculums_c') !!}">Currículum</a></li>
@@ -35,7 +35,61 @@
                       <li><a href="{!! asset('login') !!}">Iniciar Sesión</a></li>
                       
                     <li><a href="{!! asset('register') !!}">Registrarse</a></li>
-                    @endauth
+                    @endauth-->
+
+
+                    <!--Esto es lo que podría ser para quitar algunas pestañas-->
+                    <?php
+
+                  $usuario = \Auth::user();?>
+                   @if(isset($usuario))
+                          @if($usuario->tipo_usuario_id==1)
+                           
+                            <li><a href="{!! asset('inicio') !!}" >Inicio</a></li>
+                            <li><a href="{!! asset('cruds') !!}">Catálogos</a></li>
+                            <li><a href="{!! asset('vist_guias') !!}">Guías</a></li>
+                            <li><a href="{!! asset('vist_ofer') !!}">Ofertas</a></li>
+                            <li><a href="{!! asset('ver_perfil') !!}">{{
+                            $usuario->nombre }} {{ $usuario->ap_pat }} {{
+                            $usuario->ap_mat }}</a></li>
+                            <li><a href="{!! asset('logout') !!}">Cerrar sesión</a></li>
+                            @endif
+
+                          @if($usuario->tipo_usuario_id==2)
+                           
+                            <li><a href="{!! asset('inicio') !!}" >Inicio</a></li>
+                            <li><a href="{!! asset('vist_guias') !!}">Guías</a></li>
+                            <li><a href="{!! asset('vist_ofer') !!}">Ofertas</a></li>
+                            <li><a href="{!! asset('ver_perfil') !!}">{{
+                            $usuario->nombre }} {{ $usuario->ap_pat }} {{
+                            $usuario->ap_mat }}</a></li>
+                            <li><a href="{!! asset('empresa_ini') !!}">Empresa</a></li>
+                            <li><a href="{!! asset('logout') !!}">Cerrar sesión</a></li>
+                           @endif 
+
+
+                          @if($usuario->tipo_usuario_id==3)
+                           
+                            <li><a href="{!! asset('inicio') !!}" >Inicio</a></li>
+                            <li><a href="{!! asset('curriculums_c') !!}">Currículum</a></li>
+                            <li><a href="{!! asset('vist_guias') !!}">Guías</a></li>
+                            <li><a href="{!! asset('vist_ofer') !!}">Ofertas</a></li>
+                            <li><a href="{!! asset('ver_perfil') !!}">{{
+                            $usuario->nombre }} {{ $usuario->ap_pat }} {{
+                            $usuario->ap_mat }}</a></li>
+                            <li><a href="{!! asset('logout') !!}">Cerrar sesión</a></li>
+                            @endif
+
+
+                        @else
+                            <li><a href="{!! asset('bienvenida') !!}">Inicio</a></li>
+                            <li><a href="{!! asset('login') !!}">Iniciar Sesión</a></li>
+                      
+                            <li><a href="{!! asset('register') !!}">Registrarse</a></li>
+                        @endif
+                      
+
+                    
                     <!--
                     <li><a href="contact.html">Contáctanos</a></li>-->
                   </ul>

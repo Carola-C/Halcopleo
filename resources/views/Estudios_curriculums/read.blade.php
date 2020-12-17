@@ -6,7 +6,7 @@
             <div class="row">
               <div class="col-md-12"> 
                 <div class="block">
-                  <h1>Detalle de estudio-curriculum</h1>
+                  <h1>Detalles de Estudio-Curriculum</h1>
 					
 	<h2 align="left">Periodo: {!! $estudio_curriculum->estudios->fecha_inicio !!} - {!! $estudio_curriculum->estudios->fecha_fin !!}</h2>
 	<h2 align="left">Escuela: {!! $estudio_curriculum->estudios->nombre_escuela !!}</h2>

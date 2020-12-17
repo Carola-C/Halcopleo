@@ -6,7 +6,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
-                  <h1>Detalle de pais</h1>
+                  <h1>Detalles de pais</h1>
 					<h2 align="left">Nombre: {!! $pais->nombre !!}</h2>
 
 					<h2 align="left">Clave: {!! $pais->clave !!}</h2>

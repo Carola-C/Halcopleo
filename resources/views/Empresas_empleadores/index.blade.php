@@ -6,7 +6,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
-                	<h1>Listado de empresas-empleadores</h1>
+                	<h1>Catálogo de Empresas-Empleadores</h1>
                     <div>
                     	<a class="botones" href="{!! asset('cruds') !!}">Regresar</a>
   	<!--<a class="botones" href="empresas_empleadores/create">Crear</a>-->
@@ -35,7 +35,7 @@
 			
 			<td>{!! $empresa_empleador->estatus !!}</td>
 			<td>
-				<a class="botones" href="{!! 'empresas_empleadores/'.$empresa_empleador->id !!}">Detalle</a>
+				<a class="botones" href="{!! 'empresas_empleadores/'.$empresa_empleador->id !!}">Detalles</a>
 				<!--<a class="botones" href="{!! 'empresas_empleadores/'.$empresa_empleador->id.'/edit' !!}">Editar</a>-->
 				<br><br>
 				{!! Form ::open(['method'=>'DELETE' , 'url' =>'/empresas_empleadores/'.$empresa_empleador->id])!!}

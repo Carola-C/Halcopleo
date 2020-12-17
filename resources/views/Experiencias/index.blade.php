@@ -7,7 +7,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
-                	<h1>Listado de experiencias</h1>
+                	<h1>Catálogo de Experiencias</h1>
                     <div>
   	<a class="botones" href="experiencias/create">Crear</a>
   	
@@ -32,7 +32,7 @@
 			<td>{!! $experiencia->paises->nombre !!}</td>
 			<td>{!! $experiencia->estatus !!}</td>
 			<td>
-				<a class="botones" href="{!! 'experiencias/'.$experiencia->id !!}">Detalle</a>
+				<a class="botones" href="{!! 'experiencias/'.$experiencia->id !!}">Detalles</a>
 				<a class="botones" href="{!! 'experiencias/'.$experiencia->id.'/edit' !!}">
 				Editar</a>
 				<br>

@@ -7,7 +7,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
-                	<h1>Listado de empresas</h1>
+                	<h1>Catálogo de Empresas</h1>
                     <div>
                     	<a class="botones" href="{!! asset('cruds') !!}">Regresar</a>
                     	
@@ -35,7 +35,7 @@
 			<td>{!! $empresa->rfc !!}</td>
 			
 			<td>
-				<a class="botones" href="{!! 'empresas/'.$empresa->id !!}">Detalle</a>
+				<a class="botones" href="{!! 'empresas/'.$empresa->id !!}">Detalles</a>
 				
 				<a class="botones" href="{!! 'empresas/'.$empresa->id.'/edit' !!}">Editar</a>
 				<br><br>

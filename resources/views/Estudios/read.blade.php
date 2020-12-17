@@ -7,7 +7,7 @@
               <div class="col-md-12">
                 <div class="block"> 
                 	
-                  <h1>Detalle de estudio</h1>
+                  <h1>Detalles de Estudio</h1>
                   <h2 align="left">ID: {!! $estudio->id !!}</h2>
           <h2 align="left">Nombre escuela/empresa: {!! $estudio->nombre_escuela !!}</h2>
           <h2 align="left">Título: {!! $estudio->titulo !!}</h2>

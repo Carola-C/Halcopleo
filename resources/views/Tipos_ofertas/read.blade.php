@@ -6,7 +6,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
-                  <h1>Detalle de tipo de oferta</h1>
+                  <h1>Detalles de Tipo de Oferta</h1>
 					<h2 align="left">Nombre: {!! $tipo_oferta->nombre !!}</h2>
 
 					

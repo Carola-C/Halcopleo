@@ -113,7 +113,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
-                  <h1>Listado de ofertas</h1>
+                  <h1>Catálogo de Ofertas</h1>
                     <div>
     <a class="botones" href="postulaciones/">Mis postulaciones</a>
     <a class="botones" href="index_f/">Favoritos</a>

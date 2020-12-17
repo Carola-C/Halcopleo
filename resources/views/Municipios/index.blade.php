@@ -6,7 +6,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
-                	<h1>Listado de municipios</h1>
+                	<h1>Catálogo de Municipios</h1>
                     <div>
                     	<a class="botones" href="{!! asset('cruds') !!}">Regresar</a>
   	<a class="botones" href="municipios/create">Crear</a>
@@ -36,7 +36,7 @@
 			<td>{!! $municipio->nombre !!}</td>
 			<td>{!! $municipio->estatus !!}</td>
 			<td>
-				<a class="botones" href="{!! 'municipios/'.$municipio->id !!}">Detalle</a>
+				<a class="botones" href="{!! 'municipios/'.$municipio->id !!}">Detalles</a>
 				<br>
 				<br>
 				<a class="botones" href="{!! 'municipios/'.$municipio->id.'/edit' !!}">Editar</a>

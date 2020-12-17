@@ -7,7 +7,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
-                	<h1>Listado de tipos de guias</h1>
+                	<h1>Catálogo de Tipos de Guias</h1>
                     <div>
                     	<a class="botones" href="{!! asset('cruds') !!}">Regresar</a>
   	<a class="botones" href="tipos_guias/create">Crear</a>
@@ -32,7 +32,7 @@
 			<td>{!! $tipo_guia->nombre !!}</td>
 			<td>{!! $tipo_guia->estatus !!}</td>
 			<td>
-				<a class="botones" href="{!! 'tipos_guias/'.$tipo_guia->id !!}">Detalle</a>
+				<a class="botones" href="{!! 'tipos_guias/'.$tipo_guia->id !!}">Detalles</a>
 				<a class="botones" href="{!! 'tipos_guias/'.$tipo_guia->id.'/edit' !!}">Editar</a>
 				<br><br>
 				{!! Form ::open(['method'=>'DELETE' , 'url' =>'/tipos_guias/'.$tipo_guia->id])!!}

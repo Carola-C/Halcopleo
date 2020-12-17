@@ -64,7 +64,7 @@
 			@endif
 			
 			<td>
-				<a class="botones" href="{!! 'show1/'.$postulacion->oferta_id !!}">Detalle</a>
+				<a class="botones" href="{!! 'show1/'.$postulacion->oferta_id !!}">Detalles</a>
 				<!--<a class="botones" href="{!! 'postulaciones/'.$postulacion->id.'/edit' !!}">Editar</a>-->
 				<br><br>
 				 

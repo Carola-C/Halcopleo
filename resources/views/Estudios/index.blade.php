@@ -7,7 +7,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
-                	<h1>Listado de estudios</h1>
+                	<h1>Catálogo de Estudios</h1>
                     <div>
   	<a class="botones" href="estudios/create">Crear</a>
   	
@@ -32,7 +32,7 @@
 			<td>{!! $estudio->paises->nombre !!}</td>
 			<td>{!! $estudio->estatus !!}</td>
 			<td>
-				<a class="botones" href="{!! 'estudios/'.$estudio->id !!}">Detalle</a>
+				<a class="botones" href="{!! 'estudios/'.$estudio->id !!}">Detalles</a>
 				<br>
 				<br>
 				<a class="botones" href="{!! 'estudios/'.$estudio->id.'/edit' !!}">Editar</a>

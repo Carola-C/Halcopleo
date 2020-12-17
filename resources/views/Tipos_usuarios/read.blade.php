@@ -6,7 +6,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
-                  <h1>Detalle de tipo de usuario</h1>
+                  <h1>Detalles de Tipo de Usuario</h1>
 					<h2 align="left">Nombre: {!! $tipos_usuario->nombre !!}</h2>
 	
 	<h2 align="left">Estatus: {!! $tipos_usuario->estatus !!}</h2>
