@@ -110,7 +110,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="block">
-                  <h1>Detalle de oferta</h1>
+                  <h1>Información de la oferta</h1>
 					<!--<h2 align="left">ID: {!! $oferta->id !!}</h2>-->
 	<h2 align="left">Empresa: {!! $oferta->empresas->razon_social !!}</h2>
 	<h2 align="left">Tipo oferta: {!! $oferta->tipos_ofertas->nombre !!}</h2>
